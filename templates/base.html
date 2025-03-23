@@ -1,0 +1,281 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Alan - Resume / CV / vCard Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="Leven - Resume / CV / vCard Template" />
+    <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, portfolio" />
+    <meta name="author" content="lmpixels" />
+    <link rel="shortcut icon" href="favicon.ico">
+
+
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/animations.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/dlmenu.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css">
+</head>
+
+<body>
+
+    <div class="lm-animated-bg"></div>
+
+    <!-- Loading animation -->
+    <div class="preloader">
+        <div class="preloader-animation">
+            <div class="preloader-spinner">
+            </div>
+        </div>
+    </div>
+    <!-- /Loading animation -->
+
+    <!-- Page Wrapper -->
+    <div class="page-wrapper bg-move-effect">
+        <div class="page-content site-content">
+
+            <!-- Site Header -->
+            <header id="site_header" class="header">
+                <div class="header-content">
+                    <!-- Menu Button Icon -->
+                    <div class="menu-button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <!-- /Menu Button Icon -->
+
+                    <!-- Personal Photo or Site Logo -->
+                    <!--<div class="header-photo">
+              <a href="{% url 'website:index' %}">
+                <img src="./{% static 'img/profile_img.jpg' %}" alt="image">
+              </a>
+            </div>-->
+                    <!-- /Personal Photo or Site Logo -->
+
+                    <!-- Text Logo -->
+                    <div class="header-titles">
+                        <a href="{% url 'website:index' %}">
+                            <h2>AS</h2>
+                        </a>
+                    </div>
+                    <!-- Text Logo -->
+                </div>
+
+                <!-- Site Main Menu & Profile Card -->
+                <div class="site-menu profile-card-on flex-v-align dl-menuwrapper">
+                    <!-- Profile Card -->
+                    <div class="profile-card flex-v-align">
+                        <div class="profile-card-block">
+                            <!-- Profile Photo -->
+                            <div class="profile-img">
+                                <a href="{% url 'website:index' %}">
+                                    <img src="{% static 'img/profile_img.jpg' %}" alt="image">
+                                </a>
+                            </div>
+                            <!-- /Profile Photo -->
+
+                            <!-- Profile Titles -->
+                            <a href="{% url 'website:contact' %}">
+                                <h3 class="site-title">Alan Smith</h3>
+                            </a>
+
+                            <h5 class="site-subtitle">Web Designer</h5>
+                            <!-- /Profile Titles -->
+
+                            <!-- Social Links -->
+                            <div class="social-links">
+                                <ul>
+                                    <li>
+                                        <a href="{% url 'website:contact' %}" target="_blank">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="{% url 'website:contact' %}" target="_blank">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="{% url 'website:contact' %}" target="_blank">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- /Social Links -->
+                        </div>
+                    </div>
+                    <!-- /Profile Card -->
+
+                    <!-- Main Menu -->
+                    <ul class="alan-classic-menu main-menu dl-menu dl-menuopen">
+                        <li class="menu-item menu-item-has-children">
+                            <a href="{% url 'website:index' %}">About Me</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item">
+                                    <a href="{% url 'website:index' %}">About Me</a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="menu-item">
+                            <a href="{% url 'website:resume' %}">Resume</a>
+                        </li>
+
+
+
+
+
+                        <li class="menu-item current-menu-item">
+                            <a href="{% url 'website:contact' %}">Contact</a>
+                        </li>
+
+
+                    </ul>
+                    <!-- /Main Menu -->
+                </div>
+                <!-- /Site Main Menu & Profile Card -->
+            </header>
+            <!-- /Site Header -->
+
+            <!-- Right Sidebar -->
+            <div class="r-sidebar">
+                <div class="sidebar-button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <div id="blog-sidebar" class="blog-sidebar">
+                <div class="blog-sidebar-content clearfix">
+                    <div class="sidebar-item">
+                        <div class="sidebar-title">
+                            <h4>Recent Posts</h4>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="{% url 'website:contact' %}">Best Practices for Animated Progress
+                                    Indicators</a>
+                            </li>
+
+                            <li>
+                                <a href="{% url 'website:contact' %}">Designing the Perfect Feature Comparison Table</a>
+                            </li>
+
+                            <li>
+                                <a href="{% url 'website:contact' %}">An Overview of E-Commerce Platforms</a>
+                            </li>
+
+                            <li>
+                                <a href="{% url 'website:contact' %}">Why I Switched to Sketch For UI Design</a>
+                            </li>
+
+                            <li>
+                                <a href="{% url 'website:contact' %}">Creative and Innovative Navigation Designs</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-item">
+                        <div class="sidebar-title">
+                            <h4>Archives</h4>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="{% url 'website:contact' %}">June 2020</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-item">
+                        <div class="sidebar-title">
+                            <h4>Categories</h4>
+                        </div>
+
+                        <ul>
+                            <li class="cat-item">
+                                <a href="{% url 'website:contact' %}">Design</a>
+                            </li>
+
+                            <li class="cat-item">
+                                <a href="{% url 'website:contact' %}">E-Commerce</a>
+                            </li>
+
+                            <li class="cat-item">
+                                <a href="{% url 'website:contact' %}">UI</a>
+                            </li>
+
+                            <li class="cat-item">
+                                <a href="{% url 'website:contact' %}">Uncategorized</a>
+                            </li>
+
+                            <li class="cat-item">
+                                <a href="{% url 'website:contact' %}">WordPress</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- /Right Sidebar -->
+
+            {% block content %}
+
+            {% endblock %}
+
+            <!-- /Footer -->
+            <footer class="site-footer clearfix">
+                <div class="footer-social">
+                    <ul class="footer-social-links">
+                        <li>
+                            <a href="{% url 'website:contact' %}" target="_blank">Twitter</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'website:contact' %}" target="_blank">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'website:contact' %}" target="_blank">Instagram</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-copyrights">
+                    <p>© 2021 All rights reserved.</p>
+                </div>
+            </footer>
+            <!-- /Footer -->
+        </div>
+        <!-- /Page Content -->
+    </div>
+    </div>
+    <!-- /Page Wrapper -->
+
+    <script data-cfasync="false"
+        src="{% static '../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js' %}"></script>
+    <script src="{% static 'js/jquery-2.1.3.min.js' %}"></script>
+    <script src="{% static 'js/modernizr.custom.js' %}"></script>
+    <script src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.shuffle.min.js' %}"></script>
+    <script src="{% static 'js/masonry.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/jquery.dlmenu.js' %}"></script>
+    <script src="{% static 'js/validator.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
